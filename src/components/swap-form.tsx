@@ -25,7 +25,7 @@ export function SwapForm() {
   const { login, logout } = useLoginWithAbstract();
 
   // Token states
-  const [path, setPath] = useState<readonly [Address, Address]>([
+  const [path] = useState<readonly [Address, Address]>([
     ETH_TOKEN.address as `0x${string}`,
     USDC_TOKEN.address as `0x${string}`,
   ]);
